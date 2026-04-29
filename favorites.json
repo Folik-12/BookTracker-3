@@ -1,5 +1,14 @@
-__pycache__/
-favorites.json
-.venv/
+import json
+
+# Ваши данные (обычно это словарь или список)
+data = {
+    "title": "Мастер и Маргарита",
+    "author": "Михаил Булгаков",
+    "pages": 480
+}
+
+# Сохранение в файл
+with open("books.json", "w", encoding="utf-8") as file:
+    json.dump(data, file, ensure_ascii=False, indent=4)
 
 
